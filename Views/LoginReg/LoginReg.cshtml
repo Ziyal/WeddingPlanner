@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login - Wedding</title>
+  </head>
+  <body>
+    <div class="login-container">
+        <h1 class="title">Wedding Planner</h1>
+        <hr>
+        <div class="form-containers">
+            <div class="login">
+                <h3><u>Login</u></h3>
+                <form action="login_user" method="post">
+                    <h5 class="form-titles">Email: </h5><input class="form-control" type="text" name="Email">
+                    <h5 class="form-titles">Password: </h5><input class="form-control" type="password" name="Password"><br>
+                    <input class="btn btn-info login-btn btn-block" type="submit" value="Login"><br>
+                </form>
+            </div>        
+            <div class="register">
+                <h3><u>Register</u></h3>
+                <form action="register_user" method="post">
+                    <h5 class="form-titles">First Name: </h5><input class="form-control" type="text" name="FirstName">
+                    <h5 class="form-titles">Last Name: </h5><input class="form-control" type="text" name="LastName">
+                    <h5 class="form-titles">Email: </h5><input class="form-control" type="text" name="Email">
+                    <h5 class="form-titles">Password: </h5><input class="form-control" type="password" name="Password">
+                    <h5 class="form-titles">Confirm Password: </h5><input class="form-control" type="password" name="PasswordC"><br>
+                    <input class="btn btn-success login-btn btn-block" type="submit" value="Register"><br>
+                </form>
+            </div>
+            <div class="errors">
+                @{
+                    if (ViewBag.Errors != null) {
+                        foreach(var error in ViewBag.Errors) {
+                            <p class="alert alert-warning">@error</p>
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

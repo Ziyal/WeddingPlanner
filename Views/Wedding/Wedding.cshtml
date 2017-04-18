@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wedding - Wedding Planner</title>
+  </head>
+  <body>
+    <div class="wedding-container">
+            <h1 class="wedding-title">@ViewBag.CurrentWedding.Groom & @ViewBag.CurrentWedding.Bride's Wedding</h1>
+            <hr>
+        <div class="wedding-left">
+            <h4><b>Date:</b> @ViewBag.CurrentWedding.Date.ToString("MMMM d, yyyy")</h4><br>
+            <h4>Guests: </h4>
+            <ul>
+            @{
+                    foreach (var guest in @ViewBag.CurrentWedding.Guests) {
+                        <li>@guest.User.FirstName</li>
+                    }
+            }
+            </ul>
+        </div>
+        <div class="maps">
+        <iframe width="450px" height="350" src="https://www.google.com/maps/embed/v1/place?q=@ViewBag.CurrentWedding.Address&key=AIzaSyBmRsvm2Mp4NYBkjfdOjsbbZwW_GrG5P30">
+        </iframe>
+        </div>
+      <a href="/dashboard"><button class="btn btn-default btn-s btn-block">Go Back</button></button></a>
+    </div>
+  </body>
+</html>

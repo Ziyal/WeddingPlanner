@@ -1,0 +1,87 @@
+.topbar {
+    display: inline-block;
+}
+
+.title-text {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.logout-btn {
+    margin-bottom: 12px;
+    text-align: right;
+}
+
+.add-container {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.add-wedding {
+    display: inline-block;
+}
+
+.wedding-title {
+    text-align: center;
+}
+
+.wedding-left {
+    width: 350px;
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.maps {
+    width: 500px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.wedding-container {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 1em; 
+}
+
+.login-container {
+    widows: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.form-containers {
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+}
+
+.login {
+    display: inline-block;
+    widows: 150px;
+    vertical-align: top;
+    padding: 10px;
+    padding-right: 90px;
+}
+
+.register {
+    display: inline-block;
+    widows: 150px;
+    padding: 10px;
+
+}
